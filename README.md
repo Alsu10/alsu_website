@@ -1,4 +1,5 @@
 #alsu_website
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Elements - Editorial by HTML5 UP</title>
