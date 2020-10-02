@@ -1,254 +1,164 @@
+#alsu_website
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>Система управления имуществом</title>
-    	<meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 
-Flex Template 
-https://templatemo.com/tm-406-flex
--->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-        
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/templatemo_misc.css">
-        <link rel="stylesheet" href="css/templatemo_style.css">
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Название сайта</title>
+</head>
+<body>
+<!--Создаём таблицу контейнер, которой задаём следующее
+оформление:
+border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
+align="center" - размещаем контейнер по центру экрана.
+rules="rows" - убираем двойную рамку.
+style="width:60%;" - добавляем стилевое свойства, делающее
+контейнер и весь сайт "резиновым".
+Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+<table
+border="1"
+align="center"
+rules="rows"
+style="width:60%;">
+<!--Создаём строку-->
+<tr>
+<!--Создаём ячейку строки-->
+<td>
+<!--ШАПКА САЙТА-->
 
-        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
+<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
+Оформление:
+border="1" - двойная рамка толщиной в 1px
+background="images/168.png" - картинка в шапке сайта, если требуется.
+Адрес картинки вы должны вставить свой.
+bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
+cellpadding="10" - отступ содержимого от рамки не менее 10px.
+style="width:100%; border-radius:5px;" - добавляем "резиновость"
+и закругляем уголки рамки-->
+<table
+border="1"
+background="images/168.png"
+bgcolor="#7FFFD4"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<!--Создаём строку таблицы-->
+<tr>
+<!--Создаём столбец таблицы-->
+<th>
+<!--Содержание ячейки столбца-->
+<h1>Название сайта (организации)</h1>
+<h3>Описание сайта</h3>
+<!--Закрываем таблицу-->
+</th>
+</tr>
+</table>
 
+<!--ОСНОВНОЙ КОНТЕНТ-->
 
-        <div class="site-main" id="sTop">
-            <div class="site-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                          <!--  <ul class="social-icons">
-                                <li><a href="#" class="fa fa-facebook"></a></li>
-                                <li><a href="#" class="fa fa-twitter"></a></li>
-                                <li><a href="#" class="fa fa-dribbble"></a></li>
-                                <li><a href="#" class="fa fa-linkedin"></a></li>
-                            </ul> --> 
-                        </div> <!-- /.col-md-12 -->
-                    </div> <!-- /.row -->
-                </div> <!-- /.container -->
-				
-				
-                <div class="main-header">
-                    <div class="container">
-										 <div id="menu-wrapper">
-					                            <div class="row">
-								<center><a class="style22">
-			<strong>Управление имуществом Большечерниговского района Самарской области</strong></a></center>
-        <br>
-			</div></div>
+<!--В этой же ячейке контейнера создаём ещё одну таблицу
+для основного контента.
+Оформление как и в предыдущей таблице-->
 
-                        <div id="menu-wrapper">
-                            <div class="row">
-			
-		<!--	<hr size=150px width=1155px color="#000000"/> -->
-                                <div class="logo-wrapper col-md-2 col-sm-2">
-								
-                                    <h1>
-                                        <a href="#"></a>
-										
-                                    </h1>
-                                </div> <!-- /.logo-wrapper -->
-									
-			
-                                <div class="col-md-10 col-sm-10 main-menu text-right">
-                                    <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
-									
-                                    <ul class="menu-first">
-								
-                                        <li class="active"><a href="index.html">Главная</a></li>
-                                        <li><a href="#services">Экономика</a></li>
-                                        <li><a href="#portfolio">Общество</a></li>
-                                        <li><a href="#our-team">Администрация</a></li>
-                                        <li><a href="http://chernig.samregion.ru/" class="external" rel="nofollow">Портал</a></li> 
-                                        <li><a href="#contact">Контакты</a></li>                                 
-                                    </ul>                                    
-                                </div> <!-- /.main-menu -->
-                            </div> <!-- /.row -->
-                        </div> <!-- /#menu-wrapper -->                        
-                    </div> <!-- /.container -->
-                </div> <!-- /.main-header -->
-            </div> <!-- /.site-header -->
-            <div class="site-slider">
-                <div class="slider">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <li>
-                                <div class="overlay"></div>
-                                <img src="images/slide1.jpg" alt="">
-                                <div class="slider-caption visible-md visible-lg">
-                                 <!--   <h2>Digital </h2> -->
-                                 <!--   <p>more visitors to your website</p> -->
-                                   <a href="#" class="slider-btn">Вход в личный кабинет</a>  <br/>
-									<br/>
-									 <br/>
-									 <a href="vhodbezregistr.html" class="slider-btn">Вход без регистрации</a> <br/>
-									 <br/>
-									  <br/>
-									  <a href="#" class="slider-btn">Регистрация</a><br/>
-									  <br/>
-									   <br/>
-									   <a href="#" class="slider-btn">Инструкции</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="overlay"></div>
-                                <img src="images/slide2.jpg" alt="">
-                                <div class="slider-caption visible-md visible-lg">
-                                <!--    <h2>Responsive HTML CSS</h2> -->
-                               <!--     <p>Download and use it for your site</p>  -->
-                                     <a href="#" class="slider-btn">Вход в личный кабинет</a>  <br/>
-									<br/>
-									 <br/>
-									 <a href="vhodbezregistr.html" class="slider-btn">Вход без регистрации</a> <br/>
-									 <br/>
-									  <br/>
-									  <a href="#" class="slider-btn">Регистрация</a><br/>
-									  <br/>
-									   <br/>
-									   <a href="#" class="slider-btn">Инструкции</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="overlay"></div>
-                                <img src="images/slide3.jpg" alt="">
-                                <div class="slider-caption visible-md visible-lg">
-                                   <!-- <h2>Pro Level Design</h2> -->
-                               <!--     <p>High standard work</p> -->
-                                    <a href="#" class="slider-btn">Вход в личный кабинет</a>  <br/>
-									<br/>
-									 <br/>
-									 <a href="vhodbezregistr.html" class="slider-btn">Вход без регистрации</a> <br/>
-									 <br/>
-									  <br/>
-									  <a href="#" class="slider-btn">Регистрация</a><br/>
-									  <br/>
-									   <br/>
-									   <a href="#" class="slider-btn">Инструкции</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div> <!-- /.flexslider -->
-                </div> <!-- /.slider -->
-            </div> <!-- /.site-slider -->
-        </div> <!-- /.site-main -->
+<table
+border="1"
+bgcolor="#e6e6fa"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<!--Создаём строку-->
+<tr>
+<!--Создаём ячейку
+Оформление:
+rowspan="2" - объединяем две ячейки в одну.
+Число объединяемых ячеек по числу ячеек в сайдбаре.
+style="width:80%" - основной контент занимает 80% всей площади,
+оставшиеся 20% для сайдбара-->
+<td
+rowspan="2"
+style="width:80%">
+<h2>Страница</h2>
+<!--Начинаем абзац с красной строки-->
+<p style="text-indent:20px">
+Здравствуйте уважаемые будущие веб-мастера!
+Мне 55 лет и я рад приветствовать Вас на своём сайте.
+Этот сайт первый, который я разработал самостоятельно,
+а до этого умел только входить в интернет.</p>
 
- 
- 
-     <form method="POST" action="">
-  <input name="name" type="text" placeholder="Имя"/>
-  <input name="text" type="text" placeholder="Текст"/>
-  <input type="submit" value="Отправить"/>
- </form>
+<p style="text-indent:20px">Почему я решил его сделать?
+За те 3 месяца, пока разбирался в
+сайтостроении и создавал этот ресурс обнаружилось,
+что авторы руководств по созданию
+сайтов считают многие нюансы само собой разумеющимися
+и не обращают на них внимание
+А мне, учитывая возраст и «опыт», было не просто
+понять как раз эти нюансы, они отнимали больше всего
+времени.</p>
+<!--Закрываем ячейку-->
+</td>
 
+<!--САЙДБАР-->
 
-<?php
-// Переменные с формы
-$name = $_POST['name'];
-$text = $_POST['text'];
+<!--Создаём ячейку сайдбара-->
+<td bgcolor="#e6e6fa">
+<h3>Меню</h3>
+<!--Абзац для ссылки на страницу сайта-->
+<p>
+<!--Ссылка на страницу сайта-->
+<a href="">
+<!--Картинка маркера перед названием страницы-->
+<img src="http://trueimages.ru/img/00/06/f4fffdb5.png">
+<!--Название страницы
+style="margin-left:5px;" - отступ названия от маркера-->
+<span style="margin-left:5px;">Страница</span></a>
+<!--Закрываем абзац-->
+</p>
+<p>
+<a href="">
+<img src="http://trueimages.ru/img/31/ab/4dcb087c2ae4305edcd15171696.jpg">
+<span style="margin-left:5px;">Страница 1</span;></a>
+</p>
+<p>
+<a href="">
+<img src="http://trueimages.ru/img/31/ab/4dcb087c2ae4305edcd15171696.jpg">
+<span style="margin-left:5px;">Страница 2</span></a>
+</p>
+<!--Закрываем строку Меню-->
+</td>
+</tr>
+<!--Создаём строку с дополнительной информацией-->
+<tr>
+<!--Ячейка с дополнительной информацией-->
+<td
+bgcolor="#e6e6fa"
+align="center">
+<h3>Общая информация</h3>
+<p>Текст общей информации</p>
+<!--Закрываем ячейку с общей информацией
+и таблицу основного контента-->
+</td>
+</tr>
+</table>
 
-// Параметры для подключения
-$db_host = "localhost"; 
-$db_user = "root"; // Логин БД
-$db_password = ""; // Пароль БД
-$db_base = 'controlsystem'; // Имя БД
-$db_table = "mytable"; // Имя Таблицы БД
+<!--ПОДВАЛ-->
 
-// Подключение к базе данных
-$mysqli = new mysqli($db_host,$db_user,$db_password,$db_base);
-
-// Если есть ошибка соединения, выводим её и убиваем подключение
-if ($mysqli->connect_error) {
-    die('Ошибка : ('. $mysqli->connect_errno .') '. $mysqli->connect_error);
-}
-$result = $mysqli->query("INSERT INTO ".$db_table." (name,text) VALUES ('$name','$text')");
-if ($result == true){
-	echo "Информация занесена в базу данных";
-}else{
-	echo "Информация не занесена в базу данных";
-}
-if (isset($_POST['name']) && isset($_POST['text'])){
-
-    // Переменные с формы
-    $name = $_POST['name'];
-    $text = $_POST['text'];
-    
-    // Параметры для подключения
-    $db_host = "localhost"; 
-    $db_user = "root"; // Логин БД
-    $db_password = ""; // Пароль БД
-    $db_base = 'controlsystem'; // Имя БД
-    $db_table = "mytable"; // Имя Таблицы БД
-    
-    // Подключение к базе данных
-    $mysqli = new mysqli($db_host,$db_user,$db_password,$db_base);
-
-    // Если есть ошибка соединения, выводим её и убиваем подключение
-	if ($mysqli->connect_error) {
-	    die('Ошибка : ('. $mysqli->connect_errno .') '. $mysqli->connect_error);
-	}
-    
-    $result = $mysqli->query("INSERT INTO ".$db_table." (name,text) VALUES ('$name','$text')");
-    
-    if ($result == true){
-    	echo "Информация занесена в базу данных";
-    }else{
-    	echo "Информация не занесена в базу данных";
-    }
-}
-?>
-
-
-
-
-
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Map -->
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="js/vendor/jquery.gmap3.min.js"></script>
-        
-        <!-- Google Map Init-->
-        <script type="text/javascript">
-            jQuery(function($){
-                $('#map_canvas').gmap3({
-                    marker:{
-                        address: '37.769725, -122.462154' 
-                    },
-                        map:{
-                        options:{
-                        zoom: 15,
-                        scrollwheel: false,
-                        streetViewControl : true
-                        }
-                    }
-                });
-
-                /* Simulate hover on iPad
-                 * http://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers
-                 --------------------------------------------------------------------------------------------------------------*/ 
-                $('body').bind('touchstart', function() {});
-            });
-        </script>
-        <!-- templatemo 406 flex -->
-    </body>
+<!--Создаём таблицу подвала-->
+<table
+border="1"
+bgcolor="#7FFFD4"
+height="100"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<!--Создаём строку.-->
+<tr>
+<!--Создаём столбец-->
+<th>
+<h3>Подвал</h3>
+<!--Закрываем таблицу подвала. При желании в подвале можно
+сделать несколько строк и столбцов-->
+</th>
+</tr>
+</table>
+<!--Закрываем таблицу контейнера-->
+</td>
+</tr>
+</table>
+</body>
 </html>
